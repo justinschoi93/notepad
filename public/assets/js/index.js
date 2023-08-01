@@ -71,7 +71,9 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value,
   };
+  
   saveNote(newNote).then(() => {
+    console.log('saved!')
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -118,13 +120,16 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
+  console.log('...rendering...');
+
   let jsonNotes = await notes.json();
+
   if (window.location.pathname === '/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
-
+  
   let noteListItems = [];
-
+  
   // Returns HTML element with or without a delete button
   const createLi = (text, delBtn = true) => {
     const liEl = document.createElement('li');
@@ -150,7 +155,7 @@ const renderNoteList = async (notes) => {
 
       liEl.append(delBtnEl);
     }
-
+    
     return liEl;
   };
 
@@ -161,7 +166,6 @@ const renderNoteList = async (notes) => {
   jsonNotes.forEach((note) => {
     const li = createLi(note.title);
     li.dataset.note = JSON.stringify(note);
-
     noteListItems.push(li);
   });
 
