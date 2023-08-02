@@ -1,10 +1,33 @@
-# 11 Express.js: Note Taker
+# Module-11-Challenge - Note Taker Application
 
-## Your Task
-We were asked to create html and api routes for a note taking application using express.js. The work was done almost entirely on the backend. 
+## Technology Used 
+
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
+| Javascript     | [https://developer.mozilla.org/en-US/docs/Web/Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)      |   
+| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      | 
+| Git | [https://github.com/](https://github.com/)     |    
+| Node     | [https://nodejs.org/docs/latest-v20.x/api/](https://nodejs.org/docs/latest-v20.x/api/)
+| Express     | [https://expressjs.com/en/guide/routing.html](https://expressjs.com/en/guide/routing.html)
+
+## Description
+
+We were asked to create html and api routes to improve the functionality of note taking application using express.js. The work was done almost entirely on the backend. 
 
 We were then asked to deploy our application on Heroku. 
 
+## Usage
+
+1. run ~$ npm start
+2. Click Get Started Button
+3. Add text to input fields
+4. Click save button
+5. Click on note you'd like to view OR Create a new note
+6. Click on the trash icon to delete a note
+
+![the code](./public/assets/images/screenshot1.jpg)
+![Check out the Walk-through video!](./public/assets/images/walkthrough.webm)
 
 ## User Story
 
@@ -32,71 +55,12 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+## Learning Points
 
-## Bonus
+The purpose of this challenge was to practice creating api and html routes in the form of get requests, post requests, and delete requests, that would read, and make edits to a db.json file. 
 
-You haven’t learned how to handle DELETE requests, but this application offers that functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
+## My Info
 
-* `DELETE /api/notes/:id` should receive a query parameter that contains the id of a note to delete. To delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
-
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application front end must connect to an Express.js back end.
-
-  * Application back end must store notes that have a unique id in a JSON file.
-
-  * Application must be deployed to Heroku.
-
-
-### Deployment: 36%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-
-### Application Quality: 11%
-
-* Application console is free of errors.
-
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-### Bonus: +10 Points
-
-* Application allows users to delete notes.
-
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+* [LinkedIn](https://linkedin.com/in/justinchoica)
+* [Github](https://github.com/justinschoi93)
+* [Email](justinschoi93@gmail.com)
