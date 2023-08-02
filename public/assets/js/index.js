@@ -23,9 +23,7 @@ const hide = (elem) => {
 };
 
 // activeNote is used to keep track of the note in the textarea
-let activeNote = {
-  
-};
+let activeNote = {};
 
 const getNotes = () =>
   fetch('/api/notes', {
@@ -73,7 +71,7 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value,
   };
-  console.log(newNote);
+
 
   saveNote(newNote).then(() => {
 
@@ -84,11 +82,16 @@ const handleNoteSave = () => {
 
 // Delete the clicked note
 const handleNoteDelete = (e) => {
+
   // Prevents the click listener for the list from being called when the button inside of it is clicked
   e.stopPropagation();
+  console.log('delete button clicked!');
 
   const note = e.target;
+  console.log(JSON.parse(note.parentElement.getAttribute('data-note')));
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
+
+  console.log(noteId);
 
   if (activeNote.id === noteId) {
     activeNote = {};
